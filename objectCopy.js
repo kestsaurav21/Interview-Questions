@@ -1,6 +1,10 @@
 //In JS, Array copy operations creates a shallow copies.
 
 // Object.assign creates a shallow copy
+// {...} spread operator creates a shallow copy
+
+//TODO: Shallow Copy creates do not create a copy but it share same reference
+// Only first level of Object is copied.
 // const sourceObject = { a: 1, b: 2 };
 // const shallowCopy = Object.assign({}, sourceObject);
 
