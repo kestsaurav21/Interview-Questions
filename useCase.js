@@ -19,16 +19,16 @@ const users = [
         age: 22
     },
     {
-        id: 3,
-        name: "Rajesh",
-        isActive: true,
-        age: 25
-    },
-    {
         id: 4,
         name: "Roshan",
         isActive: false,
         age: 27
+    },
+    {
+        id: 3,
+        name: "Rajesh",
+        isActive: true,
+        age: 25
     }
 ]
 
@@ -77,6 +77,9 @@ console.log(" Using Filter and map: ",activeUser);
 
 // ----- 3. -------
 console.log(" 3. Sort users by age descending");
+
+const sortedList = users.sort((user1, user2) => user1.age < user2.age ? 1 : -1).map((user)=> user.name);
+console.log(sortedList);
 
 
 
