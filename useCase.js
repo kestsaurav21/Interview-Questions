@@ -78,7 +78,9 @@ console.log(" Using Filter and map: ",activeUser);
 // ----- 3. -------
 console.log(" 3. Sort users by age descending");
 
-const sortedList = users.sort((user1, user2) => user1.age < user2.age ? 1 : -1).map((user)=> user.name);
+const sortedList =
+    users.sort((user1, user2) => user1.age < user2.age ? 1 : -1)
+    .map((user)=> user.name);
 console.log(sortedList);
 
 
