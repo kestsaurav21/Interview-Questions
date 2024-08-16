@@ -4,7 +4,9 @@
 // useState is a Hook, so you can only call it at the 
 // top level of your component or your own Hooks. 
 // You can’t call it inside loops or conditions
-
+// useState is used for managing state in our Component,
+// benfits: - whenever state will change or update the ,
+// react will re-render the component without reloading the page
 // Example of useSate:
 
 
