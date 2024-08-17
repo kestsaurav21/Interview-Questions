@@ -14,10 +14,10 @@ function header(){
 export default header
 // class component
 
-class header1 extends ReadableByteStreamController.Component{
-    constructor(props){
-        super(props);
-    }
+class header1 extends React.Component{
+    // constructor(props){
+    //     super(props);
+    // }
 
     render(){
         return (
