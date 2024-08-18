@@ -19,6 +19,14 @@ var b = function(){
 // function having no name OR function without a name
 //TODO: Anonymous Function are used in place where function are used as values.
 
+var c = function(){
+    //Anonymous Function
+}
+
+
+
+
+
 //Parameters vs Arguments
 
 // function a (parameter){
@@ -27,18 +35,29 @@ var b = function(){
 // a(arguments)
 
 
+
+
+
+//Named function expression
+
+var d = function xyx(){
+    //Named function expression
+}
+
+
 // First Classs Function: 
 // a function can be passed as an argument to other functions,
 // can be returned by another function and can be assigned as 
 // a value to a variable
 // Case 1: Passing a function as an argument
-function sayHello(){
-    return "Hello, ";
-}
-function greet(message, x){
-    console.log(message(), x);
-}
-greet(sayHello, "Javascript!");
+
+// function sayHello(){
+//     return "Hello, ";
+// }
+// function greet(message, x){
+//     console.log(message(), x);
+// }
+// greet(sayHello, "Javascript!"); //Hello Javascript!
 
 //Case 2: Returning a function
 
@@ -47,4 +66,5 @@ function sayHello(){
         console.log("Hello return function");
     }
 }
+
 
