@@ -25,6 +25,26 @@ x(function y(){
 })
 
 
+// DisAdvantage: 
+
+// 1. Callback hell
+// When there is large code base , there are multiple api independent on each other
+// then we end up falling in Callback hell
+// -->> what happen code started growing horizontal inside of vertical.
+// 2. Inversion of control
+// -->> You lose the control of the code. because you gave the control of some function to another function. 
+
+const cart = ["shoe", "pant", "kurta"];
+
+api.createOrder(cart, function () {
+
+    api.proceedToPaymet( function(){
+
+        api.showOrderSummary()
+    
+    })
+})
+
 
 
 
