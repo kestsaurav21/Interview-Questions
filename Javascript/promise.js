@@ -43,3 +43,11 @@ user.then(function(data){
     console.log(data);
     
 })
+
+
+
+//Promise Methods:
+
+//promise.all() :- 
+// wait for all promises and return success
+// if any error in any promise then stop there
