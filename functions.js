@@ -1,27 +1,27 @@
 // Difference b/w function Statement and function expression
 // Answer - hoisting (they behave differenmtly )
-a(); //a called
-b(); // Error b is not a function
+// a(); //a called
+// b(); // Error b is not a function
 
 //  function Statement and Functioon declaration both are same
 
-function a(){
-    console.log("a called");
-}
+// function a(){
+//     console.log("a called");
+// }
 
 // function expression
 
-var b = function(){
-    console.log("b called");
-}
+// var b = function(){
+//     console.log("b called");
+// }
 
 // ------- Anonymous Function -------
 // function having no name OR function without a name
 //TODO: Anonymous Function are used in place where function are used as values.
 
-var c = function(){
-    //Anonymous Function
-}
+// var c = function(){
+//     //Anonymous Function
+// }
 
 
 
@@ -40,9 +40,9 @@ var c = function(){
 
 //Named function expression
 
-var d = function xyx(){
-    //Named function expression
-}
+// var d = function xyx(){
+//     //Named function expression
+// }
 
 
 // First Classs Function: 
@@ -61,10 +61,23 @@ var d = function xyx(){
 
 //Case 2: Returning a function
 
-function sayHello(){
-    return () => {
-        console.log("Hello return function");
+// function sayHello(){
+//     return () => {
+//         console.log("Hello return function");
+//     }
+// }
+
+
+
+
+//Constructor
+
+var Person = {
+    name: "Saurav",
+    getName : function(){
+        console.log(this.name);
+        
     }
 }
 
-
+Person.getName();
